@@ -10,7 +10,9 @@ class Solution:
                 basket[fruits[l]] -= 1
                 if basket[fruits[l]] == 0:
                     del basket[fruits[l]]
-                l += 1
+                l += 1    
+                
+                
             new_len = r - l + 1
             max_len = max(max_len,new_len)
         return max_len            
